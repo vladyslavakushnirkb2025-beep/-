@@ -10,3 +10,8 @@ def format_user_data(username: str) -> str:
     Форматує ім'я користувача для системного виводу.
     """
     return f"User: {username.strip().lower()}"
+def greet_user(username: str) -> str:
+    """
+    Повертає вітальне повідомлення для користувача.
+    """
+    return f"Вітаємо у системі, {username}!"
