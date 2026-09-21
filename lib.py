@@ -1,17 +1,12 @@
-def check_password_length(password: str) -> bool:
+def validate_password_length(password: str, min_length: int = 8) -> bool:
     """
-    Перевіряє, чи довжина пароля є достатньою для базової безпеки (не менше 8 символів).
+    Перевіряє, чи відповідає довжина пароля мінімальним вимогам.
     """
-    return len(password) >= 8
+    return len(password) >= min_length
 
 
-def format_user_data(username: str) -> str:
+def format_username(username: str) -> str:
     """
-    Форматує ім'я користувача для системного виводу.
+    Форматує ім'я користувача до єдиного стандарту.
     """
     return f"User: {username.strip().lower()}"
-def greet_user(username: str) -> str:
-    """
-    Повертає вітальне повідомлення для користувача.
-    """
-    return f"Вітаємо у системі, {username}!"
