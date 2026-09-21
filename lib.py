@@ -15,3 +15,8 @@ def greet_user(username: str) -> str:
     Повертає вітальне повідомлення для користувача.
     """
     return f"Вітаємо у системі, {username}!"
+def greet_user(name: str) -> str:
+    """
+    Повертає привітання для користувача.
+    """
+    return f"Вітаємо, {name}!"
