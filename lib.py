@@ -12,6 +12,6 @@ def format_user_data(username: str) -> str:
     return f"User: {username.strip().lower()}"
 def greet_user(username: str) -> str:
     """
-    Альтернативне привітання користувача.
+    Повертає вітальне повідомлення для користувача.
     """
-    return f"Вітаємо, {username}! Раді бачити в системі."
+    return f"Вітаємо у системі, {username}!"
